@@ -1,5 +1,12 @@
 function Footer() {
     try {
+        // Social media links - Replace these URLs with actual social media profiles
+        const socialLinks = {
+            facebook: "https://facebook.com/institutoide",
+            instagram: "https://instagram.com/institutoide",
+            youtube: "https://youtube.com/institutoide"
+        };
+
         return (
             <footer data-name="footer" className="bg-blue-900 text-white py-12">
                 <div className="container mx-auto px-4">
@@ -9,6 +16,9 @@ function Footer() {
                             <p className="mt-4">
                                 Transformando vidas através da educação, saúde e inclusão social 
                                 em São João de Meriti.
+                            </p>
+                            <p className="mt-4 text-sm">
+                                CNPJ: XX.XXX.XXX/0001-XX
                             </p>
                         </div>
                         <div data-name="footer-links">
@@ -28,7 +38,6 @@ function Footer() {
                                 <li>Atendimento Odontológico</li>
                                 <li>Projetos Sociais</li>
                                 <li>Defesa Civil</li>
-                                <li>Eventos Comunitários</li>
                             </ul>
                         </div>
                         <div data-name="footer-contact">
@@ -47,6 +56,17 @@ function Footer() {
                                     contato@institutoide.org
                                 </li>
                             </ul>
+                            <div className="mt-4 flex space-x-4">
+                                <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200">
+                                    <i className="fab fa-facebook-f"></i>
+                                </a>
+                                <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200">
+                                    <i className="fab fa-instagram"></i>
+                                </a>
+                                <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200">
+                                    <i className="fab fa-youtube"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div className="mt-8 pt-8 border-t border-blue-800 text-center">

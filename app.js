@@ -8,12 +8,12 @@ function App() {
                 <Courses />
                 <DentalServices />
                 <Projects />
-                <Events />
                 <CivilDefense />
                 <Gallery />
                 <Contact />
                 <DonateButton />
                 <Footer />
+                <DonationModal />
             </div>
         );
     } catch (error) {

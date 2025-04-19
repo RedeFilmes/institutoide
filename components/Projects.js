@@ -1,5 +1,10 @@
 function Projects() {
     try {
+        const handleVolunteerClick = () => {
+            const whatsappMessage = "Olá! Gostaria de ser voluntário no Instituto IDE.";
+            window.open(`https://wa.me/5521974947392?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+        };
+
         return (
             <section data-name="projects" id="projetos" className="py-16">
                 <div className="container mx-auto px-4">
@@ -36,7 +41,10 @@ function Projects() {
                                     <span className="text-gray-600">Projetos Ativos</span>
                                 </div>
                             </div>
-                            <button className="project-button">
+                            <button 
+                                className="project-button"
+                                onClick={handleVolunteerClick}
+                            >
                                 <i className="fas fa-hand-holding-heart mr-2"></i>
                                 Seja um Voluntário
                             </button>

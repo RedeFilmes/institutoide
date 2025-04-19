@@ -4,7 +4,7 @@ function DentalServices() {
         const [selectedService, setSelectedService] = React.useState(null);
 
         const services = [
-            { name: "Extração", price: "R$ 80,00", icon: "fa-tooth" },
+            { name: "Extração", price: "Consultar", icon: "fa-tooth" },
             { name: "Prótese Dentária", price: "Consultar", icon: "fa-teeth" },
             { name: "Limpeza", price: "Grátis", icon: "fa-brush" }
         ];

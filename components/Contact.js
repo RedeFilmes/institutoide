@@ -1,5 +1,12 @@
 function Contact() {
     try {
+        // Social media links - Replace these URLs with actual social media profiles
+        const socialLinks = {
+            facebook: "https://facebook.com/institutoide",
+            instagram: "https://instagram.com/institutoide",
+            youtube: "https://youtube.com/institutoide"
+        };
+
         return (
             <section data-name="contact" id="contato" className="py-16">
                 <div className="container mx-auto px-4">
@@ -19,7 +26,7 @@ function Contact() {
                                     <a href="tel:+552199999999">(21) 9999-9999</a>
                                 </p>
                                 <p>
-                                    <a href="https://wa.me/5521999999999">
+                                    <a href="https://wa.me/5521974947392">
                                         <i className="fab fa-whatsapp mr-2"></i>WhatsApp
                                     </a>
                                 </p>
@@ -33,13 +40,13 @@ function Contact() {
                             <div className="contact-social">
                                 <h3 className="text-xl font-semibold mb-4">Redes Sociais</h3>
                                 <div className="flex space-x-4">
-                                    <a href="#" className="social-link">
+                                    <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="social-link">
                                         <i className="fab fa-facebook-f"></i>
                                     </a>
-                                    <a href="#" className="social-link">
+                                    <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="social-link">
                                         <i className="fab fa-instagram"></i>
                                     </a>
-                                    <a href="#" className="social-link">
+                                    <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer" className="social-link">
                                         <i className="fab fa-youtube"></i>
                                     </a>
                                 </div>

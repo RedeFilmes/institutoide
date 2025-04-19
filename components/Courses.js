@@ -4,19 +4,19 @@ function Courses() {
             {
                 title: "Inglês",
                 description: "Aprenda inglês com professores qualificados em turmas reduzidas.",
-                price: "R$ 99/mês",
+                price: "Grátis",
                 image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3"
             },
             {
                 title: "Espanhol",
                 description: "Curso completo de espanhol para iniciantes até avançado.",
-                price: "R$ 99/mês",
+                price: "Grátis",
                 image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3"
             },
             {
                 title: "Violão",
                 description: "Aulas práticas de violão para todos os níveis.",
-                price: "R$ 120/mês",
+                price: "Grátis",
                 image: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-4.0.3"
             }
         ];

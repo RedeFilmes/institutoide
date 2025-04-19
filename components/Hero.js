@@ -1,5 +1,9 @@
 function Hero() {
     try {
+        const scrollToCourses = () => {
+            document.getElementById('cursos').scrollIntoView({ behavior: 'smooth' });
+        };
+
         return (
             <section data-name="hero" className="hero-section pt-24">
                 <div className="container mx-auto px-4 py-16">
@@ -14,14 +18,14 @@ function Hero() {
                                 desenvolvimento social para nossa comunidade.
                             </p>
                             <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-                                <a href="#matricula" className="btn-primary">
+                                <button onClick={scrollToCourses} className="btn-primary">
                                     <i className="fas fa-user-plus mr-2"></i>
                                     Matricule-se
-                                </a>
-                                <a href="#doe" className="btn-secondary">
+                                </button>
+                                <button onClick={() => document.getElementById('donation-modal').showModal()} className="btn-secondary">
                                     <i className="fas fa-heart mr-2"></i>
                                     Doe Agora
-                                </a>
+                                </button>
                             </div>
                         </div>
                         <div data-name="hero-image" className="hidden md:block">
